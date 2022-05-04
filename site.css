@@ -1,3 +1,5 @@
+/* alteracoes universais ------------------------------------- */
+
 h1 {font-family: "Copperplate", fantasy;
 font-size: xx-large;
 }
@@ -5,8 +7,8 @@ h2, button { font-family: "Copperplate", fantasy;
     font-size: xx-large;
 
 }
-h3 { font-family: "Monaco", monospace;
-        font-weight: 900;
+h3 { font-family: "Copperplate", fantasy;
+        font-size: large;
 
 
 }
@@ -19,13 +21,49 @@ em {
 b {
     font-style: italic;
 }
-body {background-color: bisque;}
+
+/* pagina ------------------------------------- */
+
+body {
+    background-color: bisque;
+}
+
 .pagina {
     display: flex;
     height: 100vh;
     flex-direction: column;
     
 }
+
+/* botoes de scroll ------------------------------------- */
+
+.scrollWith {
+    display: flex; 
+    justify-content: flex-end;
+    padding: 1rem;
+}
+
+.botoes {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    margin-left: 1.5rem;
+}
+
+.buttoon {
+    color: #413e3e;
+    background-color: bisque;
+    font-size: x-large;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.buttoon:hover {
+    color: #231f1f;
+    background-color: rgb(239, 204, 179);
+    padding: 0.5rem;
+}
+
 
 /* título do jogo e a logo ------------------------------------- */
 
@@ -87,44 +125,27 @@ body {background-color: bisque;}
     margin: auto;
     text-indent: 2rem;
 }
-/*
-.bloco11 {
-    display: flex;
-    border-width: 100px;
-    border-color: black;
-    background-color: aqua;
-    padding: 2rem;
-    justify-content: center;
-
-}
-.bloco12 { 
-    background-color: blueviolet;
-    padding: 2rem
-}
-*/
 
 /* fotos e screenshots ------------------------------------- */
-.telas {
+
+.scroll {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: row;
+    min-height: 14rem;
+    width: 80rem;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 2rem;
 }
 
-.caixa img{
+.scroll img{
     width: 28rem;
     height: 15rem;
 }
 
-.caixa img:hover{
+.scroll img:hover{
     transform: scale(1.05, 1.05);
 }
-
-.caixa h2 {
-    text-align: center;
-    font-size: x-large;
-    margin-bottom: 0.5rem;
-}
-
 
 /* bastidores do jogo ------------------------------------- */
 .datas {
@@ -188,6 +209,17 @@ body {background-color: bisque;}
     display: flex;
     flex-direction: row;
     justify-content: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons img {
+    width: 2rem;
+    height: 1.5rem;
 }
 
 
