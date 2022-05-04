@@ -266,11 +266,12 @@ body {
   .tooltip .tooltiptext {
     visibility: hidden;
     width: 20rem;
-    background-color: #86c8ba;
+    background-color: #cad8d5;
     color: rgb(74, 72, 72);
     text-align: center;
-    padding: 5px 0;
-    border-radius: 6px;
+    padding: 0.5rem;
+    border-radius: 2rem;
+    font-style: italic;
 
     position: absolute;
     z-index: 1;
@@ -294,4 +295,8 @@ body {
   .mudancas {
     display: flex;
     flex-direction: row-reverse;
+  }
+
+  .mudancas p{
+    font-size: small;
   }
