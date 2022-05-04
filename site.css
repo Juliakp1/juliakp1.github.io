@@ -91,7 +91,9 @@ body {
     transform: scale(1.05, 1.05);
 }
 
+/* ------------------------------------------------------- */
 /* descrição do jogo ------------------------------------- */
+
 .bloco1 {
     display: flex;
     padding : 2rem;
@@ -126,16 +128,17 @@ body {
     text-indent: 2rem;
 }
 
+/* --------------------------------------------------------- */
 /* fotos e screenshots ------------------------------------- */
 
 .scroll {
     display: flex;
     flex-flow: row;
     min-height: 14rem;
-    width: 80rem;
+    width: 100rem;
     overflow-x: scroll;
     overflow-y: hidden;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .scroll img{
@@ -147,7 +150,9 @@ body {
     transform: scale(1.05, 1.05);
 }
 
+/* -------------------------------------------------------- */
 /* bastidores do jogo ------------------------------------- */
+
 .datas {
     padding-bottom: 5rem;
 }
@@ -168,15 +173,15 @@ body {
     color: rgb(83, 80, 80)
 }
 
-/* parte da esquerda do site ------------------------------------- */
+/* ------------------------------------------------------- */
+/* todos os .jogo ---------------------------------------- */
+
 .jogo {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    border-top: 0.2rem dotted rgb(83, 80, 80);
-    border-bottom: 0.2rem dotted rgb(83, 80, 80); 
+    padding: 3rem;
+    border-top: 0.2rem dotted rgb(83, 80, 80); 
 
 }
 
@@ -197,33 +202,9 @@ body {
     padding: 1rem;
 }
 
-.leftNright {
-    padding-top: 3rem;
-    padding-bottom: 5rem;
-    border-top: 0.2rem dotted rgb(83, 80, 80);
-    border-bottom: 0.2rem dotted rgb(83, 80, 80); 
-}
+/* ------------------------------------------------------- */
+/* desinvolvedoras --------------------------------------- */
 
-/* divisao do site */
-.siteDivide {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.icons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.icons img {
-    width: 2rem;
-    height: 1.5rem;
-}
-
-
-/* desinvolvedoras ------------------- */
 .devs img{
     padding: 1rem;
     width: 12rem;
@@ -239,7 +220,8 @@ body {
     background-color: #62b6a4;
 }
 
-/* dev images ---------------------------------- */
+/* ------------------------------------------------------- */
+/* dev images -------------------------------------------- */
 
 .mini {
     display: flex;
@@ -258,4 +240,25 @@ body {
 
 .fox {
     transform: scale(0.8, 0.8);
+}
+
+/* ------------------------------------------------------- */
+/* icones ------------------------------------------------ */
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.icons img {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 0.9rem;
+}
+
+.icons img:hover {
+    width: 2rem;
+    height: 2rem;
+    padding-right: 1.2rem;
 }
