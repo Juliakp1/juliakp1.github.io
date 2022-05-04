@@ -173,6 +173,10 @@ body {
     color: rgb(83, 80, 80)
 }
 
+.dias:hover {
+    background-color: #62b6a4;
+}
+
 /* ------------------------------------------------------- */
 /* todos os .jogo ---------------------------------------- */
 
@@ -205,41 +209,29 @@ body {
 /* ------------------------------------------------------- */
 /* desinvolvedoras --------------------------------------- */
 
-.devs img{
-    padding: 1rem;
-    width: 12rem;
-    height: 6rem;
-}
-
-.devs img:hover{
-    transform: scale(1, 1);
-}
-
-
-.dias:hover {
-    background-color: #62b6a4;
-}
-
-/* ------------------------------------------------------- */
-/* dev images -------------------------------------------- */
-
 .mini {
     display: flex;
     flex-direction: row;
-    padding: 0%;
-    border: 0cm;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
 .bunni {
-    transform: scale(0.3, 0.8);
+    width: 10rem;
+    height: 13rem;
+    padding: 1rem;
 }
 
 .ppl {
-    transform: scale(0.7, 0.8);
+    width: 18rem;
+    height: 13rem;
+    padding: 1rem;
 }
 
-.fox {
-    transform: scale(0.8, 0.8);
+.moti {
+    width: 20rem;
+    height: 13rem;
+    padding: 1rem;
 }
 
 /* ------------------------------------------------------- */
@@ -262,3 +254,44 @@ body {
     height: 2rem;
     padding-right: 1.2rem;
 }
+
+/* ------------------------------------------------------- */
+/* tooltips ------------------------------------------------ */
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 20rem;
+    background-color: #86c8ba;
+    color: rgb(74, 72, 72);
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    position: absolute;
+    z-index: 1;
+  }
+
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .oldSite {
+    width: 16rem;
+    height: 25rem;
+    padding-left: 4rem;
+  }
+
+  .mudancas {
+    display: flex;
+    flex-direction: row-reverse;
+  }
